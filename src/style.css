@@ -1,0 +1,120 @@
+:root {
+  /* --primary-color: #efa2b4;
+  --secondary-color: #aef1ee; */
+  --main-color: #e02f6b;
+  /* --main-color: #18293c; #6cdbeb  e02f6b */
+  --blue: #0000ff;
+  --blue-dark: #18293c;
+  --orange: #ffa500;
+  --green-yellow: #cddc39;
+  --pink-light: #efa2b4; /*#65dfc9 #efa2b4*/
+  --cyan-light: #aef1ee; /*#6cdbeb aef1ee*/
+  --white: #ffffff;
+  --white-alpha-40: rgba(255, 255, 255, 0.4);
+  --white-alpha-25: rgba(255, 255, 255, 0.25);
+  --backdrop-filter-blur: blur(5px);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+::before,
+::after {
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  text-align: center;
+  height: 100%;
+  margin-top: 150px;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--pink-light),
+    var(--cyan-light)
+  );
+  background-attachment: fixed;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: var(--blue-dark);
+  line-height: 1.5;
+  overflow-x: hidden;
+  -webkit-top-heighlight-color: transparent;
+  /* padding: 35px 15px; */
+}
+
+.counter {
+  text-align: center;
+  padding: 20px;
+  margin-left: 30%;
+  padding: 50px;
+  background-color: var(--white-alpha-25);
+  border-radius: 20px solid var(--white-alpha-40);
+  border-radius: 10px;
+  width: 70vh;
+}
+.counter-header {
+  padding: 50px;
+  background-color: var(--white-alpha-25);
+  border-radius: 20px solid var(--white-alpha-40);
+  border-radius: 10px;
+  width: 70vh;
+}
+.counter-h1 {
+  padding-bottom: 20px;
+}
+/* Buttons */
+button {
+  font-family: inherit;
+  user-select: none;
+  padding: 50px;
+}
+.btn {
+  margin: 20px 10px;
+  line-height: 1.5;
+  background-color: var(--white-alpha-25);
+  border: 1px solid var(--white-alpha-40);
+  padding: 10px 28px;
+  display: inline-block;
+  border-radius: 30px;
+  color: var(--main-color);
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+  transition: color 0.3s ease;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background-color: var(--main-color);
+  z-index: -1;
+  transition: width 0.3s ease;
+}
+.btn:hover::before {
+  width: 100%;
+}
+.btn:hover {
+  color: var(--white);
+}
+
+footer {
+  margin-top: 25px;
+  opacity: 0.8;
+}
+p {
+  font-weight: 100;
+  padding-left: 10px;
+  color: var(--main-color);
+}

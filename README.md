@@ -1,3 +1,8 @@
+<h1>Assignment 2 | 13th July 2021</h1>
+
+Question 1
+In the counter app, the value of score should not increase more than 25.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
